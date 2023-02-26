@@ -18,8 +18,8 @@ public class Cliente {
 	
 	//atributos del objeto 
 	String nombre; 
-	String documento; 
-	String telefono;
+	String numeroIdentidad; 
+	String profesion;
 	
 	
 }
