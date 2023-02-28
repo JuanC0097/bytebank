@@ -3,6 +3,7 @@ package bytebank;
 public class TestReferencia3 {
 	
 	/*
+	 * Referencia de inicializacion
 	 * Primera forma:
 	 * 1.Instanciar nuevos objetos Cuenta y Cliente
 	 * 2.Agregar valor al atributo titular del objeto cuenta
@@ -31,18 +32,18 @@ public class TestReferencia3 {
 		*/
 		
 		//1
-		Cuenta cuentadejuan = new Cuenta();
+		Cuenta cuentadejuan = new Cuenta(95);
 		//2
-		cuentadejuan.titular.nombre = "juan";
-		System.out.println(cuentadejuan.titular.nombre);
+		cuentadejuan.getTitular().setNombre("juan");
+		System.out.println(cuentadejuan.getTitular().getNombre());
 		
 		
 		//Nueva clase
 		
-		Cuenta cuentaMilena = new Cuenta();
+		Cuenta cuentaMilena = new Cuenta(84);
 		
-		cuentaMilena.titular.nombre = "milena";
-		System.out.println(cuentaMilena.titular.nombre);
+		cuentaMilena.getTitular().setNombre("milena");
+		System.out.println(cuentaMilena.getTitular().getNombre());
 		
 	}
 

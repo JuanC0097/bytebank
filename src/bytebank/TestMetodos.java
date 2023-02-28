@@ -14,9 +14,9 @@ public class TestMetodos {
 		public static void main(String[] args) { 
 			
 			//Creacion de nuevas instancias del objeto Cuenta() 
-			Cuenta cuentaDejuan = new Cuenta(); 
-			Cuenta cuentaDeAlejandra = new Cuenta(); 
-			Cuenta cuentaDeMilena = new Cuenta(); 
+			Cuenta cuentaDejuan = new Cuenta(21); 
+			Cuenta cuentaDeAlejandra = new Cuenta(25); 
+			Cuenta cuentaDeMilena = new Cuenta(56); 
 			
 			
 			////////////////////////////////////////////////////////////////////////////////// 
@@ -26,9 +26,9 @@ public class TestMetodos {
 			cuentaDeAlejandra.depositar(5000); 
 			//IMPRESIONES DEL SALDO ACTUAL CON DEPOSITO 
 			System.out.println("SALDO CON DEPOSITO");
-			System.out.println("Saldo actual de juan: " + cuentaDejuan.saldo); 
-			System.out.println("Saldo actual de milena: " + cuentaDeMilena.saldo); 
-			System.out.println("Saldo actual de alejandra: " + cuentaDeAlejandra.saldo); 
+			System.out.println("Saldo actual de juan: " + cuentaDejuan.getSaldo()); 
+			System.out.println("Saldo actual de milena: " + cuentaDeMilena.getSaldo()); 
+			System.out.println("Saldo actual de alejandra: " + cuentaDeAlejandra.getSaldo()); 
 			System.out.println(); System.out.println(); System.out.println(); 
 			
 			
@@ -40,9 +40,9 @@ public class TestMetodos {
 			
 			//IMPRESIONES DEL SALDO ACTUAL CON RETIRO 
 			System.out.println("SALDO CON RETIRO"); 
-			System.out.println("Saldo actual extraccion  de juan: " + cuentaDejuan.saldo); 
-			System.out.println("Saldo actual extraccion de milena: " + cuentaDeMilena.saldo); 
-			System.out.println("Saldo actual extraccion de alejandra: " + cuentaDeAlejandra.saldo); 
+			System.out.println("Saldo actual extraccion  de juan: " + cuentaDejuan.getSaldo()); 
+			System.out.println("Saldo actual extraccion de milena: " + cuentaDeMilena.getSaldo()); 
+			System.out.println("Saldo actual extraccion de alejandra: " + cuentaDeAlejandra.getSaldo()); 
 			System.out.println(); 
 			System.out.println(); 
 			System.out.println(); 
@@ -60,26 +60,26 @@ public class TestMetodos {
 			
 			if(exitoDeTransferenciaMilena) { 
 				
-				System.out.println("La transferencia fue exitosa a la cuenta de Milena: " + cuentaDeMilena.saldo); 
-				System.out.println("Saldo restante de juan: " + cuentaDejuan.saldo ); 
+				System.out.println("La transferencia fue exitosa a la cuenta de Milena: " + cuentaDeMilena.getSaldo()); 
+				System.out.println("Saldo restante de juan: " + cuentaDejuan.getSaldo() ); 
 				
 			}else { 
 				
-				System.out.println("la transferencia no se puedo llevar acabo, cuenta milena:" + cuentaDeMilena.saldo); 
-				System.out.println("Saldo de juan: " + cuentaDejuan.saldo ); } System.out.println(); 
+				System.out.println("la transferencia no se puedo llevar acabo, cuenta milena:" + cuentaDeMilena.getSaldo()); 
+				System.out.println("Saldo de juan: " + cuentaDejuan.getSaldo() ); } System.out.println(); 
 				
 			
 			//PRUEBA N°2	TRANSFERENCIA DE ALEJANDRA A JUAN 
 			boolean exitoTransferenciaJuan = cuentaDeAlejandra.transferir(1000, cuentaDejuan); 
 			if(exitoTransferenciaJuan) {
 				
-				System.out.println("La transferencia fue exitosa a la cuenta de juan: " + cuentaDejuan.saldo); 
-				System.out.println("Saldo restante de alejandra: " + cuentaDeAlejandra.saldo );
+				System.out.println("La transferencia fue exitosa a la cuenta de juan: " + cuentaDejuan.getSaldo()); 
+				System.out.println("Saldo restante de alejandra: " + cuentaDeAlejandra.getSaldo() );
 				
 			}else {
 				
-				System.out.println("la transferencia no se puedo llevar acabo, cuenta juan:" + cuentaDejuan.saldo); 
-				System.out.println("Saldo de alejandra: " + cuentaDeAlejandra.saldo ); 
+				System.out.println("la transferencia no se puedo llevar acabo, cuenta juan:" + cuentaDejuan.getSaldo()); 
+				System.out.println("Saldo de alejandra: " + cuentaDeAlejandra.getSaldo() ); 
 			} 
 			System.out.println(); 
 			

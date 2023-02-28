@@ -7,14 +7,14 @@ public class CrearCuenta {
 		
 		//Sintasis para definir una nueva instancia del objeto
 		
-		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.saldo = 1000;
-		System.out.println("saldo de cuenta1: " + primeraCuenta.saldo);
+		Cuenta primeraCuenta = new Cuenta(3214);
+		primeraCuenta.depositar(1000);
+		System.out.println("saldo de cuenta1: " + primeraCuenta.getSaldo());
 		
 		//SEGUNDA CUENTA
-		Cuenta segundaCuenta = new Cuenta();
+		Cuenta segundaCuenta = new Cuenta(32);
 		
-		segundaCuenta.saldo = 1000;
+		segundaCuenta.depositar(1000);
 		
 		
 	}

@@ -1,25 +1,45 @@
 package bytebank;
 
-//Requerimientos del objeto Cliente.java 
-	/*
-	 *  1. Atributos del objeto 
-	 *  2. Crear clase para datos especificos del objeto cliente
-	 */
-	
-	//Buena Practicas en metodos: 
-	/* 
-	 *   1. Uso del condicional if mas eficiente: if/.
-	 *   2. El uso operaciones de incrementacion o decremento con el modificador -=, +=. 
-	 *   3. Realizar llamado de metodos, dentro de otros metodos */
-
 public class Cliente {
 	
-	//Atributos
+	//Atributos con modificador de acceso
+	/*
+	 * Public: Permite el acceso desde cualquier parte del codigo
+	 * Private: protege los atributos del objeto, solo los atributos y metodos son accesibles dentro 
+	 * de la clase de los declara.
+	 */
+	private String nombre; 
+	private String numeroIdentidad; 
+	private String profesion;
 	
-	//atributos del objeto 
-	String nombre; 
-	String numeroIdentidad; 
-	String profesion;
+	//obtener nombre
+	public String getNombre() {
+		return nombre;
+	}
+	
+	//asignar nombre
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	//obtener numero de indentidad
+	public String getNumeroIdentidad() {
+		return numeroIdentidad;
+	}
+	
+	//asignar numero de identidad
+	public void setNumeroIdentidad(String numeroIdentidad) {
+		this.numeroIdentidad = numeroIdentidad;
+	}
+	public String getProfesion() {
+		return profesion;
+	}
+	public void setProfesion(String profesion) {
+		this.profesion = profesion;
+	}
+	
+	
+	
 	
 	
 }

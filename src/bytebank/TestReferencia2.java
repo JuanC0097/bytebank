@@ -19,24 +19,21 @@ public class TestReferencia2 {
 		
 		//1
 		Cliente usuarioUno = new Cliente(); //objeto Cliente
-		Cuenta cuentaUsuarioUno = new Cuenta();//Objeto Cuenta
+		Cuenta cuentaUsuarioUno = new Cuenta(48);//Objeto Cuenta
 		
 		//2 
-		usuarioUno.nombre = "Diego"; 
-		usuarioUno.numeroIdentidad = "546846352123"; 
-		usuarioUno.profesion = "Desarrollador"; 
-		
-		//3
-		cuentaUsuarioUno.agencia = 1;
+		usuarioUno.setNombre("Diego"); 
+		usuarioUno.setNumeroIdentidad("189416515");
+		usuarioUno.setProfesion("desarrollador");
 		
 		//4 
-		cuentaUsuarioUno.titular = usuarioUno;
+		cuentaUsuarioUno.setTitular(usuarioUno);
 		
 		//5
-		System.out.println(cuentaUsuarioUno.titular.numeroIdentidad);
+		System.out.println(cuentaUsuarioUno.getTitular().getNumeroIdentidad());
 		
 		//6
-		System.out.println(cuentaUsuarioUno.titular);
+		System.out.println(cuentaUsuarioUno.getTitular());
 		System.out.println(usuarioUno);
 		
 	}
