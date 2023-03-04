@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author reaper
- *
- */
-module bytebank {
-}
