@@ -19,6 +19,10 @@ public class TestCuentaConCliente {
 		cuentaJuan.setTitular(juan);
 		System.out.println(cuentaJuan.getTitular().getNombre());
 		
+		Cliente carlos = new Cliente();
+		carlos.setDocumento("265461");
+		System.out.println(carlos.getDocumento());
+		
 	}
 	
 }
