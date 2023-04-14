@@ -22,6 +22,7 @@ public class TestCuentaConCliente {
 		Cliente carlos = new Cliente();
 		carlos.setDocumento("265461");
 		System.out.println(carlos.getDocumento());
+		System.out.println(carlos.getNombre());
 		
 	}
 	
